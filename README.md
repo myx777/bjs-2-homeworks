@@ -1,4 +1,6 @@
-[![codewars](https://www.codewars.com/users/username/badges/large)](https://www.codewars.com/users/myx777)
+## Мой статус на Codewars
+[![Codewars Profile](https://www.codewars.com/users/myx777/badges/large)](https://www.codewars.com/users/myx777)
+
 
 # Домашние задания по курсу «Основы Javascript»
 
