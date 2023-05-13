@@ -1,3 +1,5 @@
+[![codewars](https://www.codewars.com/users/username/badges/large)](https://www.codewars.com/users/myx777)
+
 # Домашние задания по курсу «Основы Javascript»
 
 0. [Основы отладки](./0.debugger/)
