@@ -88,3 +88,46 @@ class Library {
     }
 
 }
+
+//ЗАДАЧА 3
+class Student {
+    constructor(name) {
+      this.name = name;
+      this.marks = {};
+    }
+  
+    addMark(mark, subject) {
+      if (mark >= 2 && mark <= 5) {
+        if (!(subject in this.marks)) {
+            /* 
+            используй [] для доступа к значению свойства, если this.mark.subject,
+            Используя точечную нотацию (this.marks.subject), 
+            JavaScript будет искать свойство с именем "subject" 
+            в объекте this.marks, но не найдет его
+             */
+          this.marks[subject] = [];
+        }
+
+        this.marks[subject].push(mark);
+      }
+    }
+
+    getAverageBySubject(subject) {
+        return (this.marks[subject]) ?
+           this.marks[subject].reduce((acc, value) =>
+           (acc + value), 0) / this.marks[subject] .length : 0;
+    }
+
+    getAverage() {
+        let sumSubj = 0;
+        let sumAllSubject = 0;
+        for(let subject of Object.keys(this.marks)) {
+            sumSubj += this.getAverageBySubject(subject);
+            sumAllSubject = sumSubj / Object.keys(this.marks).length
+        }
+        return sumAllSubject;
+    }
+   
+
+  }
+  
